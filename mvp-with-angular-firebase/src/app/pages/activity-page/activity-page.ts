@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { ActivityService } from '../../services/activity-service';
 import { DbActivityService } from '../../services/db-activity-service';
 import { Activity } from '../../models/activity';
 import { NgClass } from '@angular/common';

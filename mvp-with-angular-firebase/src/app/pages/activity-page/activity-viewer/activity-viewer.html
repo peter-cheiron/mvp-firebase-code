@@ -8,10 +8,10 @@
         <p class="text-gray-700">{{ activity()?.description }}</p>
 
         <div class="text-sm">
-          <div class="text-gray-600">{{ activity()?.location?.address }}</div>
-          @if (activity()?.website) {
-            <a [href]="activity()?.website" target="_blank" rel="noopener" class="text-blue-600 underline">
-              {{ host(activity()?.website!) }}
+          <div class="text-gray-600">{{ activity()!.location?.address }}</div>
+          @if (activity()!.website) {
+            <a [href]="activity()!.website" target="_blank" rel="noopener" class="text-blue-600 underline">
+              {{ host(activity()!.website) }}
             </a>
           }
         </div>
